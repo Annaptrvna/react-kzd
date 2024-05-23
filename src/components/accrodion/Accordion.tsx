@@ -1,7 +1,9 @@
+import {AccordionTitle} from "./AccordionTitle";
+
 export const Accordion = () => {
     return (
         <div>
-            <h2>Menu</h2>
+            <AccordionTitle/>
             <ul>
                 <li>1</li>
                 <li>2</li>
