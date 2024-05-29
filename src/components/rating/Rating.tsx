@@ -1,13 +1,16 @@
 import {Star} from "./Star";
 
-export const Rating = () => {
+type RatingType ={
+    value: number
+}
+export const Rating = (props: RatingType) => {
     return (
         <div>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
+            <Star selected={true}/>
+            <Star selected={true}/>
+            <Star selected={false}/>
+            <Star selected={false}/>
+            <Star selected={false}/>
         </div>
 
     )

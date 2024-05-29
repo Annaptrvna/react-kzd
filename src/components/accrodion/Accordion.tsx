@@ -1,9 +1,12 @@
 import {AccordionTitle} from "./AccordionTitle";
 
-export const Accordion = () => {
+type AccordionType = {
+    title: string
+}
+export const Accordion = (props: AccordionType) => {
     return (
         <div>
-            <AccordionTitle/>
+            <AccordionTitle title={props.title}/>
             <ul>
                 <li>1</li>
                 <li>2</li>
