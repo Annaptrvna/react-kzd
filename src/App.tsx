@@ -8,8 +8,8 @@ import {OnOff} from "./components/onoff/OnOff";
 function App() {
   return (
     <div className="App">
-        <ControlledAccordion title={"Menu"}/>
-        {/*<Rating value={2}/>*/}
+        {/*<ControlledAccordion title={"Menu"}/>*/}
+        <Rating/>
         {/*<OnOff/>*/}
         {/*<OnOff/>*/}
         {/*<OnOff/>*/}
