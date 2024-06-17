@@ -11,8 +11,7 @@ export const ControlledAccordion = (props: AccordionType) => {
 
     return (
         <div>
-            <AccordionTitle title={props.title}/>
-            <button onClick={()=>setCollapsed(!collapsed)}>TOGGLE</button>
+            <AccordionTitle title={props.title} onClick={()=>setCollapsed(!collapsed)}/>
             {collapsed && <AccordionBody/>}
         </div>
     )

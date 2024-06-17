@@ -1,17 +1,19 @@
 import React from "react";
+import {RatingType} from "./Rating";
 
 type StarType = {
     selected: boolean
-    setValue: ()=>void
+    setValue: (value:RatingType) => void
+    value: RatingType
+
 }
 export const Star = (props: StarType) => {
-    return (
-        <> {
-            props.selected ?
-            <button onClick={props.setValue}><b>Star </b> </button>
-            : <button onClick={props.setValue}>Star </button>
-        }
-        </>
 
+    return (
+        <span onClick={()=>props.setValue(props.value)}> {
+            props.selected ?
+           <b>star </b> : "star"
+        }
+        </span>
     )
 }
