@@ -1,0 +1,13 @@
+.select .main {
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.items {
+    position: absolute;
+    border: 1px black solid;
+}
+
+.selected.item{
+    background-color: #61dafb;
+}
