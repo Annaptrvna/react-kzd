@@ -2,8 +2,9 @@
 import {action} from "@storybook/addon-actions"
 import {Accordion} from "./Accordion";
 import {useState} from "react";
+import {UncontrolledAccordion} from "./UncontrolledAccordion";
 export default {
-    component: Accordion
+    component: Accordion, UncontrolledAccordion
 }
 
 const onClickCallback = action("Item has been clicked")
@@ -47,6 +48,17 @@ export const ModeChanging = () => {
             onClickItem={(value)=>alert(`User with ID ${value} has been clicked`)}
             items={users}
             collapsed={collapsed}
+        />
+    )
+}
+
+export const AccordionWithReducer = () => {
+
+    return (
+        <UncontrolledAccordion
+            title={"Users"}
+            onClickItem={(value)=>alert(`User with ID ${value} has been clicked`)}
+            items={users}
         />
     )
 }
